@@ -13,9 +13,13 @@
             align-items: center;
             padding: 20px;
             overflow-x: hidden;
-            
-            /* NOVO FUNDO FIXO */
-            background: url('red_queen.jpg') center/cover fixed;
+              /* NOVO FUNDO FIXO */
+            background: url('red_queen.jpg');
+            background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll; /* ou simplesmente remova */
+}
         }
         
         .playing-card {
