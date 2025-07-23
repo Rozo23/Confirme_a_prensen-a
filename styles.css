@@ -1,5 +1,5 @@
 /* Estilos gerais */
-        * {
+      * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -7,15 +7,15 @@
         }
         
         body {
-            background: #f5e1e1;
             min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
             padding: 20px;
-            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M20,20 Q40,5 50,30 T80,20" fill="none" stroke="%23d11a2a" stroke-width="1" opacity="0.2"/></svg>');
-            background-size: 200px;
             overflow-x: hidden;
+            
+            /* NOVO FUNDO FIXO */
+            background: #f5e1e1 url('red_queen.jpg') center/cover fixed;
         }
         
         .playing-card {
@@ -65,13 +65,14 @@
             position: relative;
             max-width: 700px;
             width: 100%;
-            background: #fffaf0;
+            background: rgba(255, 250, 240, 0.42); /* Mais transparente para melhor leitura */
             border-radius: 20px;
             padding: 60px 40px 40px;
             box-shadow: 0 15px 35px rgba(139, 0, 0, 0.4);
             z-index: 10;
             border: 8px double #d11a2a;
             overflow: hidden;
+            backdrop-filter: blur(3px); /* Efeito de desfoque suave */
         }
         
         .container:before {
