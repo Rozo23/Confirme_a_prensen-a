@@ -15,7 +15,7 @@
             overflow-x: hidden;
             
             /* NOVO FUNDO FIXO */
-            background: #f5e1e1 url('red_queen.jpg') center/cover fixed;
+            background: url('red_queen.jpg') center/cover fixed;
         }
         
         .playing-card {
